@@ -9,6 +9,7 @@ if [ "$DISABLE_P2P_SYNC" = "false" ]; then
         --l2.auth http://l2_execution_engine:8551 \
         --taikoL1 "${TAIKO_L1_ADDRESS}" \
         --taikoL2 "${TAIKO_L2_ADDRESS}" \
+         --taikoL1 "${TAIKO_L1_ADDRESS}" \
         --jwtSecret /data/taiko-geth/geth/jwtsecret \
         --p2p.syncVerifiedBlocks \
         --p2p.checkPointSyncUrl https://rpc.katla.taiko.xyz
